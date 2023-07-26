@@ -1,2 +1,2 @@
-# GUI-Assignment-2
+# Weather App
 GUI Design
