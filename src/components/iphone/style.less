@@ -1,0 +1,302 @@
+@import '~style/helpers';
+
+::-webkit-scrollbar {
+	display: none;
+  }
+
+  .container{
+	padding-top: 130px;
+	width: 414px;
+	height: 736px;
+	scroll-snap-align: center;
+	padding-bottom: 550px;
+}
+
+.container1{
+	padding-top: 130px;
+	width: 414px;
+	height: 736px;
+	scroll-snap-align: center;
+	padding-bottom: 550px;
+}
+
+.containertop{
+	padding-top: 130px;
+	width: 414px;
+	height: 736px;
+	scroll-snap-align: center;
+	background-image: linear-gradient(#2ecbe9, #91b1dd);
+	padding-bottom: 550px;
+}
+
+.containertopnight{
+	padding-top: 130px;
+	width: 414px;
+	height: 736px;
+	scroll-snap-align: center;
+	background-image: none;
+	background-image: linear-gradient(#000437,#003366 );
+	padding-bottom: 550px;
+}
+
+.pageContainer { 
+	display: flex;
+	overflow: scroll;
+	flex-direction: column;
+	color: #fff;
+	width: 414px;
+	height: 736px;
+	text-align: left;
+	margin: 0 auto;
+	scroll-snap-type: both mandatory;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+}
+.details {
+	flex: 4;
+}
+
+.city {
+	margin-top: 0px;
+	flex: 1;
+	font-size: 1.7em;
+	font-weight: 400;	
+}
+
+.feels{
+	margin-top: -10px;
+	margin-bottom: 10px;
+	flex: 1;
+	font-size: 1.2em;
+}
+
+.temperature {
+	flex: 2;
+	margin-top: 10px;
+	font-size: 4em;
+	font-weight: 300;
+	letter-spacing: -3px;
+	margin-left: 0px;
+}
+
+
+.filled:after {
+	content:"°C";
+	margin: 0 0 0 0.4rem;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}
+
+.filled1:after {
+	content:"°F";
+	margin: 0 0 0 0.4rem;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}
+
+
+.filled2:after {
+	content:"";
+	margin: 0 0 0 0.4rem;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}
+.menu {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.menu img{
+	margin-top: 5px;
+}
+
+.search {
+	margin-right: 25px;
+}
+
+.search input{
+	border: none;
+	border-radius: 5px ;
+	height: 28px;
+	width: 270px;
+	opacity: 45%;
+	padding: 10px
+}
+
+.goHome, .search, .menu{
+	margin-top: -110px;
+}
+
+.goHome img:active, .menu img:active{
+	opacity: 50%; 
+}
+
+.temp{
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	margin-left: 40px;
+	margin-top: -50px;
+	margin-right: 220px
+}
+
+.loc{
+	margin-left: 25px;
+	margin-top: -15px;
+	margin-right: 225px
+}
+
+
+.widget{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-left: 280px;
+	margin-top: -100px;
+	margin-right: 35px;
+}
+
+.status{
+	padding-bottom: 10px;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: left;
+	margin-left: 20px;
+	margin-top: 15px;
+	background-color:rgba(224, 255, 255, 0.35);
+	border-radius: 1rem;
+	width: 375px;
+}
+
+.conditions{
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	font-size: 1.04em;
+	opacity: 1;
+	width: 320px;
+}
+
+.conditions p{
+	margin: 15px;
+	margin-left: 20px;;
+	width: 320px;
+	color: white
+}
+
+hr{
+	color: white;
+	border-top: 1px solid white;
+	width: 90%;
+	margin-top: -10px;
+	border-radius: 5rm;
+}
+
+.wind{
+	margin: 15px;
+	margin-left: 30px;
+	margin-right: 200px;
+	font-size: 1.1rem;
+}
+
+.humidity{
+	font-size: 1.1rem;
+	margin: 15px;
+	margin-top: -64px;
+	margin-left: 220px;
+}
+
+.clothing{
+	padding-bottom: 0px;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: left;
+	margin-left: 20px;
+	margin-top: 15px;
+	background-color:rgba(224, 255, 255, 0.35);
+	border-radius: 1rem;
+	width: 375px;
+	overflow: hidden;
+}
+
+.cloth1{
+	margin: 15px;
+	margin-left: 65px;
+	margin-right: 200px;
+	font-size: 1.1rem;
+}
+
+.cloth2{
+	font-size: 1.1rem;
+	margin: 15px;
+	margin-top: -68px;
+	margin-left: 240px;
+}
+
+.forecast{
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: left;
+	margin-left: 20px;
+	margin-top: 50px;
+	background-color:rgba(224, 255, 255, 0.35);
+	border-radius: 1rem;
+	width: 375px;
+	padding-bottom: 0;
+}
+
+
+.hourly{
+	display: flex;
+	flex-direction: row;
+	margin: 15px;
+	margin-left: 25px;
+	font-size: 1.1rem;
+	overflow-x: scroll;
+	margin-right: 32px;
+	font-size: 0.9rem;
+	padding-right: 0px; 
+}
+
+
+
+.hour{
+	margin-top: -3px;
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+.hour img{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.swipe{
+	text-align: center;
+	margin-top: -3px;
+	font-size: 0.9rem;
+}
